@@ -30,3 +30,10 @@ mongodb+srv://aravind95:MongoDB@cluster0.3egfswc.mongodb.net/cart?retryWrites=tr
   -using mongoose define schema
   -create model/collection using the above schema
   -export model
+
+                          Releasing server
+      1.In package.json file change scripts
+          "scripts": {
+                  "start": "node index.js"
+            },
+      2.In index.js change => PORT= process.env.PORT || 3000;
